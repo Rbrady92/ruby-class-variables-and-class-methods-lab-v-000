@@ -33,9 +33,7 @@ class Song
 
   def self.genre_count
     list = {}
-    @@genres.each do |curr|
-      list.keys.include?(curr) ? list[curr]+= 1 : list[curr] = 1
-    end
+    @@genres.each {|curr| list.keys.include?(curr) ? list[curr]+= 1 : list[curr] = 1}
     list
   end
 
