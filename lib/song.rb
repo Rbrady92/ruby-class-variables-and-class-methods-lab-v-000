@@ -42,5 +42,3 @@ class Song
   end
 
 end
-
-    #need artist count and genre count objects
