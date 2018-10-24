@@ -19,30 +19,30 @@ class Song
 
   def self.genres
     copy = @@genres.uniq
-    copy
+    #copy
   end
 
   def self.artists
     copy = @@artists.uniq
-    copy
+    #copy
   end
 
   def self.genre_count
     list = {}
     @@genres.each do |curr|
       list.keys.include?(curr) ? list[curr]+= 1 : list[curr] = 1
-    end 
-    list 
-  end 
+    end
+    list
+  end
 
   def self.artist_count
     list = {}
     @@artists.each do |curr|
       list.keys.include?(curr) ? list[curr]+= 1 : list[curr] = 1
-    end 
+    end
     list
-  end 
+  end
 
-end 
-       
+end
+
     #need artist count and genre count objects
